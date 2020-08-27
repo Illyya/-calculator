@@ -1,0 +1,84 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1.2;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{max-width: 100%;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body {
+    font-family: 'Verdana', Times, sans-serif;
+    background-color: #363636;
+	color: white;
+}
+
+.title-2 {
+    font-size: 2rem;
+}
+
+.wrapper {
+	padding: 2em 0;
+    max-width: 80%;
+	margin: 0 auto;
+    &__calc {
+        
+    }
+}
+
+.calc-1 {
+	background: #0ba596;
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	
+    &__title-2 {
+		margin-bottom: 0.7em;
+	}
+	input {
+		padding: 0.5em 1em;
+		transition: 0.2s ease-out;
+	}
+	input:hover {
+		background-color: rgb(234, 252, 255);
+	}
+	input:focus {
+		background-color: rgb(212, 248, 253);
+	}
+	input:active {
+		background-color: rgb(212, 248, 253);
+	}
+    &__output {
+		display: inline-block;
+		
+	}
+}
+
