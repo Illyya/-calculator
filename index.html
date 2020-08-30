@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Calc</title>
+    <title>Calculator</title>
 </head>
 <body>
     
@@ -15,7 +15,7 @@
             </h2>
             <label for="square">Длина стороны</label>
             <input type="number" name="square" id="square" placeholder="введите число">            
-            <p class="calc-1__output output"></p>            
+            <p class="calc-1__output output">Площадь 0 Периметр 0</p>            
         </div>
         <div class="wrapper__calc calc calc-2">
             <h2 class="calc-2__title-2 title-2">
@@ -25,27 +25,33 @@
             <input type="number" name="side-1" id="side-1" placeholder="введите число"><br>          
             <label for="side-2">Длина стороны</label>
             <input type="number" name="side-2" id="side-2" placeholder="введите число">            
-            <p class="calc-2__output output"></p>            
+            <p class="calc-2__output output">Площадь 0 Периметр 0</p>            
         </div>
         <div class="wrapper__calc calc calc-3">
             <h2 class="calc-3__title-2 title-2">
-                Площадь и периметр квадрата
+                Площадь круга и длина окружности
             </h2>
-            <label for="square">Длина стороны</label>
-            <input type="number" name="square" id="square" placeholder="введите число">            
-            <p class="calc-3__output output"></p>            
+            <label for="circle">Длина радиуса</label>
+            <input type="number" name="circle" id="circle" placeholder="введите число">            
+            <p class="calc-3__output output">Площадь 0 Длина окружности 0</p>            
         </div>
         <div class="wrapper__calc calc calc-4">
             <h2 class="calc-4__title-2 title-2">
-                Площадь и периметр квадрата
+                Площадь треугольника
             </h2>
-            <label for="square">Длина стороны</label>
-            <input type="number" name="square" id="square" placeholder="введите число">            
-            <p class="calc-4__output output"></p>            
+            <label for="tr1">Длина стороны</label>
+            <input type="number" name="tr1" id="tr1" placeholder="введите число"><br>            
+            <label for="tr2">Длина стороны</label>
+            <input type="number" name="tr2" id="tr2" placeholder="введите число"><br>            
+            <label for="tr3">Длина стороны</label>
+            <input type="number" name="tr3" id="tr3" placeholder="введите число">            
+            <p class="calc-4__output output">Площадь 0</p>            
         </div>
     </div>
     
     <script src="js/square.js"></script>
     <script src="js/rectangle.js"></script>
+    <script src="js/circle.js"></script>
+    <script src="js/tr.js"></script>
 </body>
 </html>

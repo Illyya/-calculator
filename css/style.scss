@@ -36,10 +36,13 @@ img{max-width: 100%;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+:root {
+	font-size: calc(0.6em + 0.5vw);
+}
 body {
     font-family: 'Verdana', Times, sans-serif;
     background-color: #363636;
-	color: white;
+	color: #dfeaff;
 }
 .title-2 {
 	font-size: 2rem;
@@ -47,35 +50,45 @@ body {
 }
 .output {
 	display: inline-block;
+	margin-top: 1em;
+	color: #f7e208;
+	font-weight: 700;
+}
+label {
+	display: inline-block;	
+	margin-top: 1em;
+	margin-right: 1em;
+	@media (max-width: 540px) {		
+		margin-bottom: 0.5em;		
+	}
 }
 input {
 	padding: 0.5em 1em;
-	margin-left: 1em;
-	&:first-of-type {
-		margin-bottom: 1em;
-	}
+	margin-right: 1em;
+	
 	border-radius: 0.3em;
 	transition: 0.2s ease-out;
 }
 input:hover {
-	background-color: rgb(234, 252, 255);
+	background-color: #dbe0ff;
 }
 input:focus {
-	background-color: rgb(212, 248, 253);
+	background-color: #b6c1ff;
 }
 input:active {
-	background-color: rgb(212, 248, 253);
+	background-color: #b6c1ff;
 }
 .wrapper {
 	padding: 2em 0;
     max-width: 80%;
 	margin: 0 auto;
+	
     &__calc {
         
     }
 }
 .calc {
-	background: #0ba596;
+	background: #5376e9;
 	padding: 1em 2em;
 	border-radius: 0.5em;
 	&:not(:last-of-type) {
