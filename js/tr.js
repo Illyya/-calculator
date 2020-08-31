@@ -8,11 +8,11 @@ function tr (a, b, c) {
     let pp = a + b + c;
     let p = pp / 2;
     let s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-     return 'Площадь ' + s;
-    };
+    return 'Площадь ' + s;
+};
 
 for (let i = 0; i < trLengths.length; i++) {
     trLengths[i].oninput = function() {
         trResult.textContent = tr(trLength1.value, trLength2.value, trLength3.value);
     }    
-}
+};
