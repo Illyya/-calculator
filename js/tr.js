@@ -13,6 +13,6 @@ function tr (a, b, c) {
 
 for (let i = 0; i < trLengths.length; i++) {
     trLengths[i].oninput = function() {
-        trResult.textContent = tr(trLength1.value, trLength2.value, trLength3.value);
+        trResult.textContent = tr(+trLength1.value, +trLength2.value, +trLength3.value);
     }    
 };
